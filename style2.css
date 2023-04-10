@@ -1,0 +1,73 @@
+div.container {
+
+width: 100%;
+
+border: 1px solid gray;
+
+}
+
+header, footer {
+
+padding: 1em;
+
+color: white;
+
+background-color: black;
+
+clear: left;
+
+text-align: center;
+
+}
+#remove when done
+#table, th, td {
+#  border: 1px solid;
+#}
+#end remove
+nav {
+
+float: left;
+
+max-width: 160px;
+
+margin: 0;
+
+padding: 1em;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding:0;
+text-align: center;
+  }
+
+nav ul a {text-decoration: none;}
+
+nav li { display: inline;}
+
+article {
+
+margin-left: 0px;
+
+#border: 1px solid gray;
+#  border-right: 1px solid gray;  
+
+padding: 1em;
+
+}
+section{
+  width: 100px
+# border-right: 1px solid gray;
+}
+
+figure {
+
+margin-left: 0px;
+
+#border: 1px solid gray;
+#border-right: 1px solid gray;  
+
+padding: 1em;
+
+}

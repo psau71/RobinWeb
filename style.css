@@ -1,0 +1,102 @@
+/* box model */
+* {
+    box-sizing:border-box;
+}
+
+/* grid container also mobile layout*/
+.grid-container {
+    display:grid;
+    grid-template-areas:
+        'header'
+        'nav'
+        'article-content'
+        'image-1'
+        'image-2'
+        'footer';
+}
+
+/* general column padding */
+.grid-container > * {
+    padding:1rem;
+   /* border-right: 1px solid gray;
+    border-left: 1px solid gray;*/
+}
+
+/* assign properties to grid items */
+.grid-container > .header {
+    grid-area:header;
+    background:black;
+    display: flex;            
+    align-items: center;      
+    justify-content: center;
+    color: white;
+}
+.grid-container > .nav {
+    grid-area:nav;
+    background:#fff;
+    display: flex;            
+    align-items: center;      
+    justify-content: center;  
+    /*border-right: 1px solid #383e42;*/
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.grid-container > .article-content {
+    grid-area:article-content;
+    background:#fff;
+    border-left: 1px solid gray;
+}
+.grid-container > .image-1 {
+    grid-area:image-1;
+    background:#fff;
+}
+.grid-container > .image-2 {
+    grid-area:image-2;
+    background:#fff;
+    /*border-right: 1px solid #383e42;*/
+    border-right: 1px solid gray;
+}
+.grid-container > .footer {
+    grid-area:footer;
+    background:black;
+    display: flex;            
+    align-items: center;      
+    justify-content: center;
+    color: white;  
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+      }   
+nav ul a {
+    text-decoration: none;
+}
+nav li {
+    display: inline;
+}
+
+/* tablet */
+@media (min-width:768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'header header'
+            'nav nav'
+            'article-content article-content'
+            'image-1 image-2'
+            'footer footer';
+    }
+}
+
+/* desktop */
+@media (min-width:1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            'header header header'
+            'nav nav nav'
+            'article-content image-1 image-2'
+            'footer footer footer';
+    }
+}
